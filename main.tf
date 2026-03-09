@@ -6,7 +6,7 @@ resource "aws_instance" "name" {
   ami = var.image
   instance_type = var.instance_name
   key_name = var.key-pair
-  vpc_security_group_ids = "sg-0002f6ecceaad3bdc"
+  vpc_security_group_ids = ["sg-0002f6ecceaad3bdc"]
 
   tags = {
     Name = "web-server"
