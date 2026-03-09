@@ -15,5 +15,5 @@ resource "aws_instance" "name" {
 
 data "aws_security_group" "sg-1" {
   name = "sg"
-  vpc_id = "vpc-0e8c799f8edc4f620 "
+  vpc_id = "vpc-0e8c799f8edc4f620"
 }
