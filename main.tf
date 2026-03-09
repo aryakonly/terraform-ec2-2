@@ -6,7 +6,7 @@ resource "aws_instance" "name" {
   ami = var.image
   instance_type = var.instance_name
   key_name = var.key-pair
-  vpc_security_group_ids = [data.aws_security_group.sg-1.name]
+  vpc_security_group_ids = [data.aws_security_group.sg-1.id]
 }
 data "aws_security_group" "sg-1" {
   name = "sg"
